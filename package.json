@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "amqplib": "^0.5.5",
-    "crawler": "^1.2.1"
+    "crawler": "^1.2.1",
+    "query-string": "^6.8.3"
+
   }
 }
