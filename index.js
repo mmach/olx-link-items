@@ -120,7 +120,7 @@ amqp.connect(process.env.AMQP?process.env.AMQP:'amqp://kyqjanjv:6djuPiJWnpZnIMT1
                         });
                         // console.log(urlItems.length)
                         // console.log(newItem)
-                        const CONN_URL = 'amqp://kyqjanjv:6djuPiJWnpZnIMT1jZ-SvIULv8IOLw2P@hedgehog.rmq.cloudamqp.com/kyqjanjv';
+                        const CONN_URL = process.env.AMQP?process.env.AMQP:'amqp://kyqjanjv:6djuPiJWnpZnIMT1jZ-SvIULv8IOLw2P@hedgehog.rmq.cloudamqp.com/kyqjanjv';
                         let ch = null;
                         await new Promise((res, rej) => {
                             amqp.connect(CONN_URL, function (err, conn) {
