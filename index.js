@@ -32,7 +32,7 @@ amqp.connect(process.env.AMQP?process.env.AMQP:'amqp://kyqjanjv:6djuPiJWnpZnIMT1
         var queue = 'olx-link-items-single';
 
 
-        channel.prefetch(1);
+        channel.prefetch(3);
 
         console.log(" [*] Waiting for messages in %s. To exit press CTRL+C", queue);
         channel.consume(queue, function (msg) {
