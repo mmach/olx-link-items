@@ -21,7 +21,7 @@ var c_items = new Crawler({
 
 
 
-amqp.connect('amqp://kyqjanjv:6djuPiJWnpZnIMT1jZ-SvIULv8IOLw2P@hedgehog.rmq.cloudamqp.com/kyqjanjv', function (error0, connection) {
+amqp.connect(process.env.AMQP?process.env.AMQP:'amqp://kyqjanjv:6djuPiJWnpZnIMT1jZ-SvIULv8IOLw2P@hedgehog.rmq.cloudamqp.com/kyqjanjv', function (error0, connection) {
     if (error0) {
         throw error0;
     }
